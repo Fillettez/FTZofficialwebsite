@@ -1,0 +1,199 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+    color: #333;
+    padding-top: 60px;
+}
+
+header {
+    padding: 20px 0;
+    position: relative; /* Change from fixed to relative */
+    top: 0; /* Adjust if needed */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Ensure the navbar is not fixed at the top */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    max-height: 140px; /* Increase this value for a larger logo */
+    width: auto;
+}
+
+/* Hero Section */
+#home .hero {
+    background: url('png/posterFillettez.png') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    background: rgba(200, 191, 191, 0.412);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Section Padding */
+.section-padding {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Members Section */
+.members-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.members-row {
+    display: flex;
+    width: 400%;
+    transition: transform 1s ease-in-out;
+}
+
+.member {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.member img {
+    width: 80%;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #eee;
+}
+
+/* Keyframes for automatic scrolling */
+@keyframes scrollMembers {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+}
+
+.members-row {
+    animation: scrollMembers 10s infinite;
+}
+
+/* Footer */
+footer {
+    background: #7173896e;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #eee;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Shop Grid */
+.shop-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Shop Item */
+.shop-item {
+    flex: 1 1 calc(25% - 20px);
+    max-width: 300px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Shop Item Hover Effects */
+.shop-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Shop Item Image */
+.shop-item img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Shop Item Title */
+.shop-item h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #717389;
+}
+
+/* Shop Item Button */
+.shop-item .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #717389;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Shop Item Button Hover Effects */
+.shop-item .btn:hover {
+    background-color: #5a5f6e;
+    transform: translateY(-2px);
+}
