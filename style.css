@@ -51,7 +51,7 @@ body {
 /* Hero */
 .hero {
     height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('png/posterFillettez.png') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('png/poster ftz.png') top/cover;
     display: flex;
     align-items: center;
     justify-content: center;
